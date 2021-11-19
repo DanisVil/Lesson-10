@@ -37,7 +37,8 @@ namespace Training_Manual
         public override bool IsFigureContainsPoint(Point point)
         {
             float x = point.GetCoordinates()[0], y = point.GetCoordinates()[1];
-            if ((x - defining_components[0]) <= Math.Abs(baza / 2) && (y - defining_components[1]) <= Math.Abs(height / 2))
+            if ((x - defining_components[0]) <= baza / 2 && (x - defining_components[0]) >= -baza / 2 
+                && (y - defining_components[1]) <= height / 2 && (y - defining_components[1]) >= -height / 2)
             {
                 return true;
             }

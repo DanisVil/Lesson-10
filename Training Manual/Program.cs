@@ -16,7 +16,7 @@ namespace Training_Manual
             Circle circle = new Circle(new float[2] { 1, 2 }, 5);
             Console.WriteLine(circle.IsFigureContainsPoint(new Point(new float[2]{ -4.001f, 2 })));
             Rectangle rect = new Rectangle(new float[2] { 4, -2 }, 7, 4);
-            Console.WriteLine(rect.IsFigureContainsPoint(new Point(new float[2] { -0.5001f, 0 })));
+            Console.WriteLine(rect.IsFigureContainsPoint(new Point(new float[2] { 0.499999f, 0 })));
             Console.ReadKey();
         }
     }
